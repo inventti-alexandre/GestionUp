@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="12da29d5e6f549ab9cfce91cf12b232e" Name="Diagram1">
+        <EntityTypeShape EntityType="AlejandriaModel.CategoriaOperador" Width="1.5" PointX="1.5" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.CondicionesIVA" Width="1.5" PointX="3" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.CondicionesVenta" Width="1.5" PointX="3" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Especialidad" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.EstadosCliente" Width="1.5" PointX="3" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Localidad" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Operador" Width="1.5" PointX="3" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Personal" Width="1.5" PointX="0.75" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Profesion" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Provincia" Width="1.5" PointX="3" PointY="39.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Sucursal" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.TiposDocumentosIdentidad" Width="1.5" PointX="3" PointY="55" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlejandriaModel.Zona" Width="1.5" PointX="3" PointY="51.375" IsExpanded="true" />
+        <AssociationConnector Association="AlejandriaModel.FK_Personal_CategoriasOperadores" ManuallyRouted="false" />
+        <AssociationConnector Association="AlejandriaModel.FK_Especialidades_Profesion" ManuallyRouted="false" />
+        <AssociationConnector Association="AlejandriaModel.FK_Sucursales_Localidades" ManuallyRouted="false" />
+        <AssociationConnector Association="AlejandriaModel.FK_Operadores_Personal" ManuallyRouted="false" />
+        <AssociationConnector Association="AlejandriaModel.FK_Sucursales_Provincias" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AlejandriaModel.Cliente" Width="1.5" PointX="5.25" PointY="1.375" />
+        <EntityTypeShape EntityType="AlejandriaModel.Vendedor" Width="1.5" PointX="3" PointY="9.875" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_CondicionIva" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_CondicionVenta" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_Especialidad" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_EstadoClienteId" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_Localidad" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_OperadorAlta" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_OperadorModificacion" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_Profesion" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_Provincia" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_SucursalAlta" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_Sucursales" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_SucursalModificacion" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_TipoDocumento" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_Vendedores" />
+        <AssociationConnector Association="AlejandriaModel.FK_Clientes_Zona" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
