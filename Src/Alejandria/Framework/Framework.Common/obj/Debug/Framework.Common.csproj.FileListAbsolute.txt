@@ -6,3 +6,12 @@ D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Deb
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\EntityFramework.xml
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\obj\Debug\Framework.Common.dll
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\obj\Debug\Framework.Common.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\Framework.Common.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\Framework.Common.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\AutoMapper.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\EntityFramework.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\AutoMapper.xml
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\EntityFramework.xml
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\obj\Debug\Framework.Common.csprojResolveAssemblyReference.cache
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\obj\Debug\Framework.Common.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Common\obj\Debug\Framework.Common.pdb

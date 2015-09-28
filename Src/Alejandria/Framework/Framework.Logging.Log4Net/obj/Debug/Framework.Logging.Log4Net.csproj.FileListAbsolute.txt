@@ -11,3 +11,16 @@ D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Ne
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.csprojResolveAssemblyReference.cache
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.dll
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.Log4Net.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.Log4Net.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Common.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\log4net.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\AutoMapper.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Common.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\log4net.xml
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\AutoMapper.xml
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.csprojResolveAssemblyReference.cache
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.pdb

@@ -2,3 +2,8 @@ D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\bin\D
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\bin\Debug\Framework.Security.pdb
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\obj\Debug\Framework.Security.dll
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\obj\Debug\Framework.Security.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Security\bin\Debug\Framework.Security.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Security\bin\Debug\Framework.Security.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Security\obj\Debug\Framework.Security.csprojResolveAssemblyReference.cache
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Security\obj\Debug\Framework.Security.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Security\obj\Debug\Framework.Security.pdb

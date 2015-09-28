@@ -10,3 +10,15 @@ D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFra
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.csprojResolveAssemblyReference.cache
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.dll
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.EntityFramework.dll.config
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.EntityFramework.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.EntityFramework.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.xml
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.csprojResolveAssemblyReference.cache
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.pdb

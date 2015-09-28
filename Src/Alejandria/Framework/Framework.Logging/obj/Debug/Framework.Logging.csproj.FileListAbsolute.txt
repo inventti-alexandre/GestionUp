@@ -2,3 +2,7 @@ D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging\bin\De
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging\bin\Debug\Framework.Logging.pdb
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging\obj\Debug\Framework.Logging.dll
 D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging\obj\Debug\Framework.Logging.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging\bin\Debug\Framework.Logging.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging\bin\Debug\Framework.Logging.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging\obj\Debug\Framework.Logging.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Framework\Framework.Logging\obj\Debug\Framework.Logging.pdb
