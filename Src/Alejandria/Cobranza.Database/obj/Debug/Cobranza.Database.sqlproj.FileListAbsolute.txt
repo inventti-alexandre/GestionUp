@@ -1,0 +1,15 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Cobranza.Database.dacpac
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Alejandria.Database.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Alejandria.Database.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\obj\Debug\Alejandria.Database.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\obj\Debug\Alejandria.Database.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Cobranza.Database.dacpac
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Alejandria.Database.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Alejandria.Database.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Database\obj\Debug\Alejandria.Database.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Database\obj\Debug\Alejandria.Database.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Cobranza.Database\bin\Debug\Cobranza.Database.dacpac
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Cobranza.Database\bin\Debug\Alejandria.Database.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Cobranza.Database\bin\Debug\Alejandria.Database.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Cobranza.Database\obj\Debug\Alejandria.Database.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Cobranza.Database\obj\Debug\Alejandria.Database.pdb
