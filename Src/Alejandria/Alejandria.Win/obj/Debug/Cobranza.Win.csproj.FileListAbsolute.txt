@@ -98,3 +98,8 @@ E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria
 E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\obj\Debug\Cobranza.Win.csproj.GenerateResource.Cache
 E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\obj\Debug\Cobranza.Win.exe
 E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\obj\Debug\Cobranza.Win.pdb
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\bin\Debug\Telerik.WinControls.UI.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\bin\Debug\Telerik.WinControls.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\bin\Debug\TelerikCommon.dll
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\bin\Debug\Telerik.WinControls.UI.xml
+E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\Alejandria\Alejandria.Win\bin\Debug\Telerik.WinControls.xml
