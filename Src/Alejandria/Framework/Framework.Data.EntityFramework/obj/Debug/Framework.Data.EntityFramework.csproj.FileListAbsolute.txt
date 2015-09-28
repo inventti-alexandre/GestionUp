@@ -1,0 +1,12 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.EntityFramework.dll.config
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.EntityFramework.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.EntityFramework.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\Framework.Data.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.xml
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.csprojResolveAssemblyReference.cache
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data.EntityFramework\obj\Debug\Framework.Data.EntityFramework.pdb

@@ -1,0 +1,8 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\Framework.Common.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\Framework.Common.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\AutoMapper.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\EntityFramework.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\AutoMapper.xml
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\bin\Debug\EntityFramework.xml
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\obj\Debug\Framework.Common.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common\obj\Debug\Framework.Common.pdb

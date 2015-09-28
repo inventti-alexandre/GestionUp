@@ -1,0 +1,4 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common.Win\bin\Debug\Framework.Common.Win.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common.Win\bin\Debug\Framework.Common.Win.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common.Win\obj\Debug\Framework.Common.Win.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Common.Win\obj\Debug\Framework.Common.Win.pdb

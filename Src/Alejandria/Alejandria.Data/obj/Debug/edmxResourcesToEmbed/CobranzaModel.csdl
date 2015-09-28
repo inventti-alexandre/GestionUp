@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlejandriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CategoriaOperador">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prioridad" Type="Int32" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <NavigationProperty Name="Personales" Relationship="Self.FK_Personal_CategoriasOperadores" FromRole="CategoriasOperadores" ToRole="Personal" />
+  </EntityType>
+  <EntityType Name="CondicionesIVA">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Prioridad" Type="Int32" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_CondicionIva" FromRole="CondicionesIVA" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="CondicionesVenta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prioridad" Type="Int32" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_CondicionVenta" FromRole="CondicionesVenta" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Especialidad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProfesionId" Type="Int32" Nullable="false" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Profesion" Relationship="Self.FK_Especialidades_Profesion" FromRole="Especialidades" ToRole="Profesiones" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_Especialidad" FromRole="Especialidad" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="EstadosCliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prioridad" Type="Int32" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_EstadoClienteId" FromRole="EstadosCliente" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Localidad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="CP" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ProvinciaId" Type="Int32" Nullable="false" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Sucursales" Relationship="Self.FK_Sucursales_Localidades" FromRole="Localidades" ToRole="Sucursales" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_Localidad" FromRole="Localidad" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Operador">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Clave" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="VigenteDesde" Type="DateTime" Precision="3" />
+    <Property Name="VigenteHasta" Type="DateTime" Precision="3" />
+    <Property Name="PersonalId" Type="Guid" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <Property Name="Habilitado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK_Operadores_Personal" FromRole="Operadores" ToRole="Personal" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_OperadorAlta" FromRole="Operador" ToRole="Cliente" />
+    <NavigationProperty Name="Clientes1" Relationship="AlejandriaModel.FK_Clientes_OperadorModificacion" FromRole="Operador" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="ContactoId" Type="Guid" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cuit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Domicilio" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProvinciaId" Type="Int32" />
+    <Property Name="LocalidadId" Type="Int32" />
+    <Property Name="CategoriaId" Type="Int32" />
+    <Property Name="SucursalId" Type="Int32" />
+    <Property Name="TipoLiquidacionId" Type="Int32" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Celular" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="HoraDesdeM" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="HoraHastaM" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="HoraDesdeT" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="HoraHastaT" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="CategoriasOperador" Relationship="Self.FK_Personal_CategoriasOperadores" FromRole="Personal" ToRole="CategoriasOperadores" />
+    <NavigationProperty Name="Operadores" Relationship="Self.FK_Operadores_Personal" FromRole="Personal" ToRole="Operadores" />
+  </EntityType>
+  <EntityType Name="Profesion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prioridad" Type="Int32" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Especialidades" Relationship="Self.FK_Especialidades_Profesion" FromRole="Profesiones" ToRole="Especialidades" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_Profesion" FromRole="Profesion" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Provincia">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NombreCorto" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="PaisId" Type="Int32" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Sucursales" Relationship="Self.FK_Sucursales_Provincias" FromRole="Provincias" ToRole="Sucursales" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_Provincia" FromRole="Provincia" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="NombreCorto" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ProvinciaId" Type="Int32" />
+    <Property Name="LocalidadId" Type="Int32" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TelPart" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelCel" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Responsable" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <Property Name="MaximoImporteVenta" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <Property Name="MaximoPorcentajeDescuento" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="MaximoNroLineasPorVenta" Type="Int32" Nullable="false" />
+    <Property Name="SucursalNumero" Type="Int32" />
+    <NavigationProperty Name="Localidad" Relationship="Self.FK_Sucursales_Localidades" FromRole="Sucursales" ToRole="Localidades" />
+    <NavigationProperty Name="Provincia" Relationship="Self.FK_Sucursales_Provincias" FromRole="Sucursales" ToRole="Provincias" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_SucursalAlta" FromRole="Sucursal" ToRole="Cliente" />
+    <NavigationProperty Name="Clientes1" Relationship="AlejandriaModel.FK_Clientes_Sucursales" FromRole="Sucursal" ToRole="Cliente" />
+    <NavigationProperty Name="Clientes2" Relationship="AlejandriaModel.FK_Clientes_SucursalModificacion" FromRole="Sucursal" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="TiposDocumentosIdentidad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Prioridad" Type="Int32" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_TipoDocumento" FromRole="TiposDocumentosIdentidad" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="Zona">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_Zona" FromRole="Zona" ToRole="Cliente" />
+  </EntityType>
+  <Association Name="FK_Personal_CategoriasOperadores">
+    <End Role="CategoriasOperadores" Type="AlejandriaModel.CategoriaOperador" Multiplicity="0..1" />
+    <End Role="Personal" Type="Self.Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriasOperadores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Personal">
+        <PropertyRef Name="CategoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especialidades_Profesion">
+    <End Role="Profesiones" Type="AlejandriaModel.Profesion" Multiplicity="1" />
+    <End Role="Especialidades" Type="AlejandriaModel.Especialidad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profesiones">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Especialidades">
+        <PropertyRef Name="ProfesionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursales_Localidades">
+    <End Role="Localidades" Type="AlejandriaModel.Localidad" Multiplicity="0..1" />
+    <End Role="Sucursales" Type="AlejandriaModel.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidades">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sucursales">
+        <PropertyRef Name="LocalidadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operadores_Personal">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="0..1" />
+    <End Role="Operadores" Type="AlejandriaModel.Operador" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operadores">
+        <PropertyRef Name="PersonalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursales_Provincias">
+    <End Role="Provincias" Type="Self.Provincia" Multiplicity="0..1" />
+    <End Role="Sucursales" Type="AlejandriaModel.Sucursal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincias">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sucursales">
+        <PropertyRef Name="ProvinciaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AlejandriaDbContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CategoriaOperadors" EntityType="AlejandriaModel.CategoriaOperador" />
+    <EntitySet Name="CondicionesIVAs" EntityType="Self.CondicionesIVA" />
+    <EntitySet Name="CondicionesVentas" EntityType="Self.CondicionesVenta" />
+    <EntitySet Name="Especialidads" EntityType="AlejandriaModel.Especialidad" />
+    <EntitySet Name="EstadosClientes" EntityType="Self.EstadosCliente" />
+    <EntitySet Name="Localidads" EntityType="AlejandriaModel.Localidad" />
+    <EntitySet Name="Operadors" EntityType="AlejandriaModel.Operador" />
+    <EntitySet Name="Personals" EntityType="Self.Personal" />
+    <EntitySet Name="Profesions" EntityType="AlejandriaModel.Profesion" />
+    <EntitySet Name="Provincias" EntityType="Self.Provincia" />
+    <EntitySet Name="Sucursals" EntityType="AlejandriaModel.Sucursal" />
+    <EntitySet Name="TiposDocumentosIdentidads" EntityType="Self.TiposDocumentosIdentidad" />
+    <EntitySet Name="Zonas" EntityType="Self.Zona" />
+    <AssociationSet Name="FK_Personal_CategoriasOperadores" Association="Self.FK_Personal_CategoriasOperadores">
+      <End Role="CategoriasOperadores" EntitySet="CategoriaOperadors" />
+      <End Role="Personal" EntitySet="Personals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especialidades_Profesion" Association="Self.FK_Especialidades_Profesion">
+      <End Role="Profesiones" EntitySet="Profesions" />
+      <End Role="Especialidades" EntitySet="Especialidads" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursales_Localidades" Association="Self.FK_Sucursales_Localidades">
+      <End Role="Localidades" EntitySet="Localidads" />
+      <End Role="Sucursales" EntitySet="Sucursals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operadores_Personal" Association="Self.FK_Operadores_Personal">
+      <End Role="Personal" EntitySet="Personals" />
+      <End Role="Operadores" EntitySet="Operadors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursales_Provincias" Association="Self.FK_Sucursales_Provincias">
+      <End Role="Provincias" EntitySet="Provincias" />
+      <End Role="Sucursales" EntitySet="Sucursals" />
+    </AssociationSet>
+    <EntitySet Name="Clientes" EntityType="AlejandriaModel.Cliente" />
+    <EntitySet Name="Vendedors" EntityType="AlejandriaModel.Vendedor" />
+    <AssociationSet Name="FK_Clientes_CondicionIva" Association="AlejandriaModel.FK_Clientes_CondicionIva">
+      <End Role="CondicionesIVA" EntitySet="CondicionesIVAs" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_CondicionVenta" Association="AlejandriaModel.FK_Clientes_CondicionVenta">
+      <End Role="CondicionesVenta" EntitySet="CondicionesVentas" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Especialidad" Association="AlejandriaModel.FK_Clientes_Especialidad">
+      <End Role="Especialidad" EntitySet="Especialidads" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_EstadoClienteId" Association="AlejandriaModel.FK_Clientes_EstadoClienteId">
+      <End Role="EstadosCliente" EntitySet="EstadosClientes" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Localidad" Association="AlejandriaModel.FK_Clientes_Localidad">
+      <End Role="Localidad" EntitySet="Localidads" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_OperadorAlta" Association="AlejandriaModel.FK_Clientes_OperadorAlta">
+      <End Role="Operador" EntitySet="Operadors" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_OperadorModificacion" Association="AlejandriaModel.FK_Clientes_OperadorModificacion">
+      <End Role="Operador" EntitySet="Operadors" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Profesion" Association="AlejandriaModel.FK_Clientes_Profesion">
+      <End Role="Profesion" EntitySet="Profesions" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Provincia" Association="AlejandriaModel.FK_Clientes_Provincia">
+      <End Role="Provincia" EntitySet="Provincias" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_SucursalAlta" Association="AlejandriaModel.FK_Clientes_SucursalAlta">
+      <End Role="Sucursal" EntitySet="Sucursals" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Sucursales" Association="AlejandriaModel.FK_Clientes_Sucursales">
+      <End Role="Sucursal" EntitySet="Sucursals" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_SucursalModificacion" Association="AlejandriaModel.FK_Clientes_SucursalModificacion">
+      <End Role="Sucursal" EntitySet="Sucursals" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_TipoDocumento" Association="AlejandriaModel.FK_Clientes_TipoDocumento">
+      <End Role="TiposDocumentosIdentidad" EntitySet="TiposDocumentosIdentidads" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Vendedores" Association="AlejandriaModel.FK_Clientes_Vendedores">
+      <End Role="Vendedore" EntitySet="Vendedors" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Zona" Association="AlejandriaModel.FK_Clientes_Zona">
+      <End Role="Zona" EntitySet="Zonas" />
+      <End Role="Cliente" EntitySet="Clientes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="SucursalId" Type="Int32" />
+    <Property Name="Cuenta" Type="Int32" />
+    <Property Name="Denominacion" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Domicilio" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="DomicilioDoc" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="Telefono" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+    <Property Name="Celular" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="Cuit" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="Mail" Type="String" MaxLength="40" FixedLength="true" Unicode="true" />
+    <Property Name="VendedorId" Type="Int32" />
+    <Property Name="ProvinciaId" Type="Int32" />
+    <Property Name="LocalidadId" Type="Int32" />
+    <Property Name="CondicionVentaId" Type="Int32" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="3" />
+    <Property Name="PagoLocal" Type="Boolean" />
+    <Property Name="ZonaId" Type="Int32" />
+    <Property Name="TipoDocumentoId" Type="Int32" />
+    <Property Name="CondicionIvaId" Type="Int32" />
+    <Property Name="Contacto" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ProfesionId" Type="Int32" />
+    <Property Name="EspecialidadId" Type="Int32" />
+    <Property Name="EstadoClienteId" Type="Int32" />
+    <Property Name="AceptaConsig" Type="Boolean" />
+    <Property Name="Imagen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Temp" Type="Boolean" />
+    <Property Name="Recargo" Type="Single" />
+    <Property Name="Activo" Type="Boolean" />
+    <Property Name="FechaAlta" Type="DateTime" Precision="3" />
+    <Property Name="OperadorAltaId" Type="Guid" />
+    <Property Name="SucursalAltaId" Type="Int32" />
+    <Property Name="FechaModificacion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorModificacionId" Type="Guid" />
+    <Property Name="SucursalModificacionId" Type="Int32" />
+    <Property Name="MandarMail" Type="Boolean" />
+    <Property Name="Llamar" Type="Boolean" />
+    <NavigationProperty Name="CondicionesIVA" Relationship="AlejandriaModel.FK_Clientes_CondicionIva" FromRole="Cliente" ToRole="CondicionesIVA" />
+    <NavigationProperty Name="CondicionesVenta" Relationship="AlejandriaModel.FK_Clientes_CondicionVenta" FromRole="Cliente" ToRole="CondicionesVenta" />
+    <NavigationProperty Name="Especialidade" Relationship="AlejandriaModel.FK_Clientes_Especialidad" FromRole="Cliente" ToRole="Especialidad" />
+    <NavigationProperty Name="EstadosCliente" Relationship="AlejandriaModel.FK_Clientes_EstadoClienteId" FromRole="Cliente" ToRole="EstadosCliente" />
+    <NavigationProperty Name="Localidade" Relationship="AlejandriaModel.FK_Clientes_Localidad" FromRole="Cliente" ToRole="Localidad" />
+    <NavigationProperty Name="Operadore" Relationship="AlejandriaModel.FK_Clientes_OperadorAlta" FromRole="Cliente" ToRole="Operador" />
+    <NavigationProperty Name="Operadore1" Relationship="AlejandriaModel.FK_Clientes_OperadorModificacion" FromRole="Cliente" ToRole="Operador" />
+    <NavigationProperty Name="Profesione" Relationship="AlejandriaModel.FK_Clientes_Profesion" FromRole="Cliente" ToRole="Profesion" />
+    <NavigationProperty Name="Provincia" Relationship="AlejandriaModel.FK_Clientes_Provincia" FromRole="Cliente" ToRole="Provincia" />
+    <NavigationProperty Name="Sucursale" Relationship="AlejandriaModel.FK_Clientes_SucursalAlta" FromRole="Cliente" ToRole="Sucursal" />
+    <NavigationProperty Name="Sucursale1" Relationship="AlejandriaModel.FK_Clientes_Sucursales" FromRole="Cliente" ToRole="Sucursal" />
+    <NavigationProperty Name="Sucursale2" Relationship="AlejandriaModel.FK_Clientes_SucursalModificacion" FromRole="Cliente" ToRole="Sucursal" />
+    <NavigationProperty Name="TiposDocumentosIdentidad" Relationship="AlejandriaModel.FK_Clientes_TipoDocumento" FromRole="Cliente" ToRole="TiposDocumentosIdentidad" />
+    <NavigationProperty Name="Vendedor" Relationship="AlejandriaModel.FK_Clientes_Vendedores" FromRole="Cliente" ToRole="Vendedore" />
+    <NavigationProperty Name="Zona" Relationship="AlejandriaModel.FK_Clientes_Zona" FromRole="Cliente" ToRole="Zona" />
+  </EntityType>
+  <EntityType Name="Vendedor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Abreviatura" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FechaGeneracion" Type="DateTime" Precision="3" />
+    <Property Name="OperadorId" Type="Guid" />
+    <NavigationProperty Name="Clientes" Relationship="AlejandriaModel.FK_Clientes_Vendedores" FromRole="Vendedore" ToRole="Cliente" />
+  </EntityType>
+  <Association Name="FK_Clientes_CondicionIva">
+    <End Type="AlejandriaModel.CondicionesIVA" Role="CondicionesIVA" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionesIVA">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="CondicionIvaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_CondicionVenta">
+    <End Type="AlejandriaModel.CondicionesVenta" Role="CondicionesVenta" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionesVenta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="CondicionVentaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Especialidad">
+    <End Type="AlejandriaModel.Especialidad" Role="Especialidad" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidad">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="EspecialidadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_EstadoClienteId">
+    <End Type="AlejandriaModel.EstadosCliente" Role="EstadosCliente" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadosCliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="EstadoClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Localidad">
+    <End Type="AlejandriaModel.Localidad" Role="Localidad" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidad">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="LocalidadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_OperadorAlta">
+    <End Type="AlejandriaModel.Operador" Role="Operador" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operador">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="OperadorAltaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_OperadorModificacion">
+    <End Type="AlejandriaModel.Operador" Role="Operador" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operador">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="OperadorModificacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Profesion">
+    <End Type="AlejandriaModel.Profesion" Role="Profesion" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profesion">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="ProfesionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Provincia">
+    <End Type="AlejandriaModel.Provincia" Role="Provincia" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincia">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="ProvinciaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_SucursalAlta">
+    <End Type="AlejandriaModel.Sucursal" Role="Sucursal" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="SucursalAltaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Sucursales">
+    <End Type="AlejandriaModel.Sucursal" Role="Sucursal" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="SucursalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_SucursalModificacion">
+    <End Type="AlejandriaModel.Sucursal" Role="Sucursal" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="SucursalModificacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_TipoDocumento">
+    <End Type="AlejandriaModel.TiposDocumentosIdentidad" Role="TiposDocumentosIdentidad" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TiposDocumentosIdentidad">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="TipoDocumentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Vendedores">
+    <End Type="AlejandriaModel.Vendedor" Role="Vendedore" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedore">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="VendedorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Zona">
+    <End Type="AlejandriaModel.Zona" Role="Zona" Multiplicity="0..1" />
+    <End Type="AlejandriaModel.Cliente" Role="Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="ZonaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

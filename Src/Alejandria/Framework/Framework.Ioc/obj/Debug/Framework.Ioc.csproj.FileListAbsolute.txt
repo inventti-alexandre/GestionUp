@@ -1,0 +1,4 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Ioc\bin\Debug\Framework.Ioc.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Ioc\bin\Debug\Framework.Ioc.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Ioc\obj\Debug\Framework.Ioc.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Ioc\obj\Debug\Framework.Ioc.pdb

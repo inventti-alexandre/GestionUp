@@ -1,0 +1,4 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data\bin\Debug\Framework.Data.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data\bin\Debug\Framework.Data.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data\obj\Debug\Framework.Data.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Data\obj\Debug\Framework.Data.pdb

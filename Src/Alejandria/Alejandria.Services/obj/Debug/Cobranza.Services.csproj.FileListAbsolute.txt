@@ -1,0 +1,15 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\obj\Debug\Cobranza.Services.csprojResolveAssemblyReference.cache
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Cobranza.Services.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Cobranza.Services.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Cobranza.Data.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Framework.Data.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\EntityFramework.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Cobranza.Entities.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Framework.Data.EntityFramework.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Cobranza.Data.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Framework.Data.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\EntityFramework.xml
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Cobranza.Entities.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\bin\Debug\Framework.Data.EntityFramework.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\obj\Debug\Cobranza.Services.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Services\obj\Debug\Cobranza.Services.pdb

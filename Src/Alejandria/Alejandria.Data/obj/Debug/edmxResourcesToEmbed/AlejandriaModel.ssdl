@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlejandriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CategoriasOperadores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prioridad" Type="int" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="SucursalModificacionId" Type="int" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SucursalId" Type="int" />
+    <Property Name="Cuenta" Type="int" />
+    <Property Name="Denominacion" Type="nvarchar" MaxLength="80" />
+    <Property Name="Domicilio" Type="nchar" MaxLength="100" />
+    <Property Name="DomicilioDoc" Type="nchar" MaxLength="100" />
+    <Property Name="Telefono" Type="nchar" MaxLength="40" />
+    <Property Name="Celular" Type="nchar" MaxLength="15" />
+    <Property Name="Fax" Type="nchar" MaxLength="15" />
+    <Property Name="Cuit" Type="nvarchar" MaxLength="11" />
+    <Property Name="Mail" Type="nchar" MaxLength="40" />
+    <Property Name="VendedorId" Type="int" />
+    <Property Name="ProvinciaId" Type="int" />
+    <Property Name="LocalidadId" Type="int" />
+    <Property Name="CondicionVentaId" Type="int" />
+    <Property Name="FechaNacimiento" Type="datetime" />
+    <Property Name="PagoLocal" Type="bit" />
+    <Property Name="ZonaId" Type="int" />
+    <Property Name="TipoDocumentoId" Type="int" />
+    <Property Name="CondicionIvaId" Type="int" />
+    <Property Name="Contacto" Type="varchar" MaxLength="50" />
+    <Property Name="ProfesionId" Type="int" />
+    <Property Name="EspecialidadId" Type="int" />
+    <Property Name="EstadoClienteId" Type="int" />
+    <Property Name="AceptaConsig" Type="bit" />
+    <Property Name="Imagen" Type="nvarchar" MaxLength="100" />
+    <Property Name="Comentarios" Type="ntext" />
+    <Property Name="Temp" Type="bit" />
+    <Property Name="Recargo" Type="real" />
+    <Property Name="Activo" Type="bit" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+    <Property Name="MandarMail" Type="bit" />
+    <Property Name="Llamar" Type="bit" />
+  </EntityType>
+  <EntityType Name="CondicionesIVA">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="500" />
+    <Property Name="Prioridad" Type="int" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="CondicionesVenta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prioridad" Type="int" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Especialidades">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="ProfesionId" Type="int" Nullable="false" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="EstadosCliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prioridad" Type="int" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Localidades">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="40" />
+    <Property Name="CP" Type="nvarchar" MaxLength="10" />
+    <Property Name="ProvinciaId" Type="int" Nullable="false" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Operadores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Usuario" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Clave" Type="nvarchar" MaxLength="64" />
+    <Property Name="VigenteDesde" Type="datetime" />
+    <Property Name="VigenteHasta" Type="datetime" />
+    <Property Name="PersonalId" Type="uniqueidentifier" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+    <Property Name="Habilitado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="ContactoId" Type="uniqueidentifier" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cuit" Type="nvarchar" MaxLength="50" />
+    <Property Name="Domicilio" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProvinciaId" Type="int" />
+    <Property Name="LocalidadId" Type="int" />
+    <Property Name="CategoriaId" Type="int" />
+    <Property Name="SucursalId" Type="int" />
+    <Property Name="TipoLiquidacionId" Type="int" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="50" />
+    <Property Name="Celular" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="50" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="HoraDesdeM" Type="char" MaxLength="4" />
+    <Property Name="HoraHastaM" Type="char" MaxLength="4" />
+    <Property Name="HoraDesdeT" Type="char" MaxLength="4" />
+    <Property Name="HoraHastaT" Type="char" MaxLength="4" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Profesiones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prioridad" Type="int" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Provincias">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="NombreCorto" Type="nchar" MaxLength="10" />
+    <Property Name="PaisId" Type="int" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Sucursales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="30" />
+    <Property Name="NombreCorto" Type="nvarchar" MaxLength="10" />
+    <Property Name="ProvinciaId" Type="int" />
+    <Property Name="LocalidadId" Type="int" />
+    <Property Name="Direccion" Type="nvarchar" MaxLength="50" />
+    <Property Name="TelPart" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelCel" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="Responsable" Type="nvarchar" MaxLength="30" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="SucursalModificacionId" Type="int" />
+    <Property Name="MaximoImporteVenta" Type="money" Nullable="false" />
+    <Property Name="MaximoPorcentajeDescuento" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="MaximoNroLineasPorVenta" Type="int" Nullable="false" />
+    <Property Name="SucursalNumero" Type="int" />
+  </EntityType>
+  <EntityType Name="TiposDocumentosIdentidad">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
+    <Property Name="Prioridad" Type="int" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <EntityType Name="Vendedores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="FechaGeneracion" Type="datetime" />
+    <Property Name="OperadorId" Type="uniqueidentifier" />
+  </EntityType>
+  <EntityType Name="Zonas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar" MaxLength="10" />
+    <Property Name="FechaAlta" Type="datetime" />
+    <Property Name="OperadorAltaId" Type="uniqueidentifier" />
+    <Property Name="SucursalAltaId" Type="int" />
+    <Property Name="FechaModificacion" Type="datetime" />
+    <Property Name="OperadorModificacionId" Type="uniqueidentifier" />
+    <Property Name="SucursalModificacionId" Type="int" />
+  </EntityType>
+  <Association Name="FK_Clientes_CondicionIva">
+    <End Role="CondicionesIVA" Type="Self.CondicionesIVA" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionesIVA">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="CondicionIvaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_CondicionVenta">
+    <End Role="CondicionesVenta" Type="Self.CondicionesVenta" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionesVenta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="CondicionVentaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Especialidad">
+    <End Role="Especialidades" Type="Self.Especialidades" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especialidades">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="EspecialidadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_EstadoClienteId">
+    <End Role="EstadosCliente" Type="Self.EstadosCliente" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EstadosCliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="EstadoClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Localidad">
+    <End Role="Localidades" Type="Self.Localidades" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidades">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="LocalidadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_OperadorAlta">
+    <End Role="Operadores" Type="Self.Operadores" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operadores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="OperadorAltaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_OperadorModificacion">
+    <End Role="Operadores" Type="Self.Operadores" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Operadores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="OperadorModificacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Profesion">
+    <End Role="Profesiones" Type="Self.Profesiones" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profesiones">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="ProfesionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Provincia">
+    <End Role="Provincias" Type="Self.Provincias" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincias">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="ProvinciaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_SucursalAlta">
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursales">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="SucursalAltaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Sucursales">
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursales">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="SucursalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_SucursalModificacion">
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursales">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="SucursalModificacionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_TipoDocumento">
+    <End Role="TiposDocumentosIdentidad" Type="Self.TiposDocumentosIdentidad" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TiposDocumentosIdentidad">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="TipoDocumentoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Vendedores">
+    <End Role="Vendedores" Type="Self.Vendedores" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="VendedorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Clientes_Zona">
+    <End Role="Zonas" Type="Self.Zonas" Multiplicity="0..1" />
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zonas">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Clientes">
+        <PropertyRef Name="ZonaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especialidades_Profesion">
+    <End Role="Profesiones" Type="Self.Profesiones" Multiplicity="1" />
+    <End Role="Especialidades" Type="Self.Especialidades" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profesiones">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Especialidades">
+        <PropertyRef Name="ProfesionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Operadores_Personal">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="0..1" />
+    <End Role="Operadores" Type="Self.Operadores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Operadores">
+        <PropertyRef Name="PersonalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Personal_CategoriasOperadores">
+    <End Role="CategoriasOperadores" Type="Self.CategoriasOperadores" Multiplicity="0..1" />
+    <End Role="Personal" Type="Self.Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategoriasOperadores">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Personal">
+        <PropertyRef Name="CategoriaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursales_Localidades">
+    <End Role="Localidades" Type="Self.Localidades" Multiplicity="0..1" />
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Localidades">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sucursales">
+        <PropertyRef Name="LocalidadId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sucursales_Provincias">
+    <End Role="Provincias" Type="Self.Provincias" Multiplicity="0..1" />
+    <End Role="Sucursales" Type="Self.Sucursales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Provincias">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sucursales">
+        <PropertyRef Name="ProvinciaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AlejandriaModelStoreContainer">
+    <EntitySet Name="CategoriasOperadores" EntityType="Self.CategoriasOperadores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CondicionesIVA" EntityType="Self.CondicionesIVA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CondicionesVenta" EntityType="Self.CondicionesVenta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Especialidades" EntityType="Self.Especialidades" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EstadosCliente" EntityType="Self.EstadosCliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Localidades" EntityType="Self.Localidades" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Operadores" EntityType="Self.Operadores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personal" EntityType="Self.Personal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Profesiones" EntityType="Self.Profesiones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Provincias" EntityType="Self.Provincias" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sucursales" EntityType="Self.Sucursales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TiposDocumentosIdentidad" EntityType="Self.TiposDocumentosIdentidad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vendedores" EntityType="Self.Vendedores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Zonas" EntityType="Self.Zonas" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Clientes_CondicionIva" Association="Self.FK_Clientes_CondicionIva">
+      <End Role="CondicionesIVA" EntitySet="CondicionesIVA" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_CondicionVenta" Association="Self.FK_Clientes_CondicionVenta">
+      <End Role="CondicionesVenta" EntitySet="CondicionesVenta" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Especialidad" Association="Self.FK_Clientes_Especialidad">
+      <End Role="Especialidades" EntitySet="Especialidades" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_EstadoClienteId" Association="Self.FK_Clientes_EstadoClienteId">
+      <End Role="EstadosCliente" EntitySet="EstadosCliente" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Localidad" Association="Self.FK_Clientes_Localidad">
+      <End Role="Localidades" EntitySet="Localidades" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_OperadorAlta" Association="Self.FK_Clientes_OperadorAlta">
+      <End Role="Operadores" EntitySet="Operadores" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_OperadorModificacion" Association="Self.FK_Clientes_OperadorModificacion">
+      <End Role="Operadores" EntitySet="Operadores" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Profesion" Association="Self.FK_Clientes_Profesion">
+      <End Role="Profesiones" EntitySet="Profesiones" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Provincia" Association="Self.FK_Clientes_Provincia">
+      <End Role="Provincias" EntitySet="Provincias" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_SucursalAlta" Association="Self.FK_Clientes_SucursalAlta">
+      <End Role="Sucursales" EntitySet="Sucursales" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Sucursales" Association="Self.FK_Clientes_Sucursales">
+      <End Role="Sucursales" EntitySet="Sucursales" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_SucursalModificacion" Association="Self.FK_Clientes_SucursalModificacion">
+      <End Role="Sucursales" EntitySet="Sucursales" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_TipoDocumento" Association="Self.FK_Clientes_TipoDocumento">
+      <End Role="TiposDocumentosIdentidad" EntitySet="TiposDocumentosIdentidad" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Vendedores" Association="Self.FK_Clientes_Vendedores">
+      <End Role="Vendedores" EntitySet="Vendedores" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Clientes_Zona" Association="Self.FK_Clientes_Zona">
+      <End Role="Zonas" EntitySet="Zonas" />
+      <End Role="Clientes" EntitySet="Clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especialidades_Profesion" Association="Self.FK_Especialidades_Profesion">
+      <End Role="Profesiones" EntitySet="Profesiones" />
+      <End Role="Especialidades" EntitySet="Especialidades" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Operadores_Personal" Association="Self.FK_Operadores_Personal">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Operadores" EntitySet="Operadores" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personal_CategoriasOperadores" Association="Self.FK_Personal_CategoriasOperadores">
+      <End Role="CategoriasOperadores" EntitySet="CategoriasOperadores" />
+      <End Role="Personal" EntitySet="Personal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursales_Localidades" Association="Self.FK_Sucursales_Localidades">
+      <End Role="Localidades" EntitySet="Localidades" />
+      <End Role="Sucursales" EntitySet="Sucursales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sucursales_Provincias" Association="Self.FK_Sucursales_Provincias">
+      <End Role="Provincias" EntitySet="Provincias" />
+      <End Role="Sucursales" EntitySet="Sucursales" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

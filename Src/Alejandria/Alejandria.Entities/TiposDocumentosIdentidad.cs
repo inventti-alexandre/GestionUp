@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Alejandria.Entities
+namespace Cobranza.Entities
 {
     using System;
     using System.Collections.Generic;

@@ -1,17 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alejandria.Win", "Alejandria.Win\Alejandria.Win.csproj", "{F861CB7C-89E3-4311-9A50-21E1014C59A0}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobranza.Win", "Alejandria.Win\Cobranza.Win.csproj", "{F861CB7C-89E3-4311-9A50-21E1014C59A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alejandria.Entities", "Alejandria.Entities\Alejandria.Entities.csproj", "{10481CDB-87D9-4D21-8E05-CAFE2E530356}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobranza.Entities", "Alejandria.Entities\Cobranza.Entities.csproj", "{10481CDB-87D9-4D21-8E05-CAFE2E530356}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alejandria.Services", "Alejandria.Services\Alejandria.Services.csproj", "{0A643337-4800-4AB8-B2C2-125C36C674E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobranza.Services", "Alejandria.Services\Cobranza.Services.csproj", "{0A643337-4800-4AB8-B2C2-125C36C674E2}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Alejandria.Database", "Alejandria.Database\Alejandria.Database.sqlproj", "{58A26873-6714-42E4-BFBE-5EAAA7711E61}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Cobranza.Database", "Alejandria.Database\Cobranza.Database.sqlproj", "{58A26873-6714-42E4-BFBE-5EAAA7711E61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alejandria.Data", "Alejandria.Data\Alejandria.Data.csproj", "{B6A55D5D-FD74-417D-8F0E-F56DBCC0072F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cobranza.Data", "Alejandria.Data\Cobranza.Data.csproj", "{B6A55D5D-FD74-417D-8F0E-F56DBCC0072F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{B7253B6D-DD53-4BFA-836D-954A5364ED7D}"
 EndProject

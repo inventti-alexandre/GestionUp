@@ -1,0 +1,4 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\bin\Debug\Framework.Security.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\bin\Debug\Framework.Security.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\obj\Debug\Framework.Security.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Security\obj\Debug\Framework.Security.pdb

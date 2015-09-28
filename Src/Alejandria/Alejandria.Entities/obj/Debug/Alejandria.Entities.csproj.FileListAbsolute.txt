@@ -1,0 +1,5 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\bin\Debug\Alejandria.Entities.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\bin\Debug\Alejandria.Entities.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\obj\Debug\Alejandria.Entities.csprojResolveAssemblyReference.cache
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\obj\Debug\Alejandria.Entities.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\obj\Debug\Alejandria.Entities.pdb

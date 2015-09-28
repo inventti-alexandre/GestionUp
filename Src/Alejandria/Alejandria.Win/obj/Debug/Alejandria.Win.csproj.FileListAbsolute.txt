@@ -1,0 +1,5 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Win\bin\Debug\Alejandria.Win.exe.config
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Win\obj\Debug\Alejandria.Win.csprojResolveAssemblyReference.cache
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Win\obj\Debug\Alejandria.Win.Properties.Resources.resources
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Win\obj\Debug\Alejandria.Win.csproj.GenerateResource.Cache
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Win\bin\Debug\Cobranza.Win.exe.config

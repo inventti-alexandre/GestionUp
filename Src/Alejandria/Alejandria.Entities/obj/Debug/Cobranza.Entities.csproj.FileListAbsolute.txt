@@ -1,0 +1,4 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\bin\Debug\Cobranza.Entities.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\bin\Debug\Cobranza.Entities.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\obj\Debug\Cobranza.Entities.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Entities\obj\Debug\Cobranza.Entities.pdb

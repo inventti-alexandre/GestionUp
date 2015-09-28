@@ -1,0 +1,5 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Cobranza.Database.dacpac
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Alejandria.Database.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\bin\Debug\Alejandria.Database.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\obj\Debug\Alejandria.Database.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Alejandria.Database\obj\Debug\Alejandria.Database.pdb

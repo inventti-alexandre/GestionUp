@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="B6A55D5D-FD74-417D-8F0E-F56DBCC0072F" ModuleId="Alejandria.Data" />
+  <Module PersistentId="20259EAA-C937-4BF2-913A-F4531796FE5B" ModuleId="Framework.Data.EntityFramework" />
+  <Module PersistentId="CB41F702-99FB-49AE-8BC0-1B7F0193EFAB" ModuleId="Framework.Data" />
+  <Module PersistentId="0A643337-4800-4AB8-B2C2-125C36C674E2" ModuleId="Cobranza.Services" />
+</Modules>

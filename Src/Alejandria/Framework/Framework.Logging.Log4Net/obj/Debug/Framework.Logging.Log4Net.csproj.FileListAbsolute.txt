@@ -1,0 +1,13 @@
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.Log4Net.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.Log4Net.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Common.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\log4net.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\AutoMapper.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Common.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\Framework.Logging.pdb
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\log4net.xml
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\bin\Debug\AutoMapper.xml
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.csprojResolveAssemblyReference.cache
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.dll
+D:\Works\Sistemas AA\GestionUp\Src\Alejandria\Framework\Framework.Logging.Log4Net\obj\Debug\Framework.Logging.Log4Net.pdb

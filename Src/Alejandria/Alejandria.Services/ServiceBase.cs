@@ -1,13 +1,13 @@
 ﻿using System;
-using Alejandria.Data.Interfaces;
-using Alejandria.Services.Interfaces;
+using Cobranza.Data.Interfaces;
+using Cobranza.Services.Interfaces;
 using Framework.Data.Repository;
 
-namespace Alejandria.Services
+namespace Cobranza.Services
 {
     public class ServiceBase : IServive
     {
-        protected IAlejandriaUow Uow { get; set; }
+        protected ICobranzaUow Uow { get; set; }
 
         protected IUowFactory UowFactory { get; set; }
 

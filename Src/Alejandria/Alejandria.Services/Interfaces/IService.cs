@@ -1,6 +1,6 @@
 using System;
 
-namespace Alejandria.Services.Interfaces
+namespace Cobranza.Services.Interfaces
 {
     public interface IServive : IDisposable
     {
