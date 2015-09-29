@@ -214,3 +214,6 @@ E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\GestionUp\Cobranza.Wi
 E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\GestionUp\Cobranza.Win\obj\Debug\Cobranza.Win.Forms.Form1.resources
 E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\GestionUp\Cobranza.Win\obj\Debug\Cobranza.Win.Properties.Resources.resources
 E:\Santy Rock\Documents\Trabajos\Otros\Apipe\GestionUp\Src\GestionUp\Cobranza.Win\obj\Debug\Cobranza.Win.csproj.GenerateResource.Cache
+D:\Works\Sistemas AA\GestionUp\Src\GestionUp\Cobranza.Win\bin\Debug\Cobranza.Win.exe.config
+D:\Works\Sistemas AA\GestionUp\Src\GestionUp\Cobranza.Win\obj\Debug\Cobranza.Win.exe
+D:\Works\Sistemas AA\GestionUp\Src\GestionUp\Cobranza.Win\obj\Debug\Cobranza.Win.pdb
